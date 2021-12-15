@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*
+font-family: 'Bree Serif', serif; font principal du site
+font-family: 'Lato', sans-serif;; font pour les paragraphe
+
+color:#7c0505;  rouge foncé
+color:#9d0808;  rouge foncé clair
+color:#363636;   noir clair
+*/
+
+
+/*Début page*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    background-color: black;
+}
+
+
+/*Début du header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    top: 0;
+    position: sticky;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 999;
+}
+
+#title {
+    margin-right: 6rem;
+}
+
+#title h1 {
+    font-size: 3rem;
+    color: #b20d0d;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-page a {
+    text-decoration: none;
+    color: white;
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.btn::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav label,
+#toggle {
+    display: none;
+}
+
+#form a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#form #Inscription {
+    background-color: #b20d0d;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.6rem;
+    transition: 0.35s;
+}
+
+#form #Inscription:hover {
+    background-color: #7b0606;
+}
+
+#form #Identifier {
+    margin-right: 1.8rem;
+}
+
+#form #Identifier:hover {
+    text-decoration: underline;
+}
+
+
+/*Fin du header*/
+
+
+/*Début de la section principale*/
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("img/wall-brique.jpg");
+    background-size: contain;
+    background-position: center;
+    }
+
+/*Début pré histoire*/
+
+#preHistoire {
+    background-color: #DBDBDB;
+    height: 30vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/bg-food.jpg");
+}
+
+#containerPreHistoire {
+    text-align: center;
+    width: 40vw;
+}
+
+#containerPreHistoire h2 {
+    font-size: 3.5rem;
+}
+
+#containerPreHistoire p {
+    font-size: 1.5rem;
+    color: #C5C5C5;
+}
+
+#containerPreHistoire span {
+    color: #b20d0d;
+}
+
+
+/*Fin pré histoire*/
+
+
+/*Début Travaillons ensemble*/
+
+#travaillonsEnsemble {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    background-color: #844617;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/fond.jpg");
+    background-position: center;
+    align-items: center;
+}
+
+#travaillonsEnsembleText {
+    text-align: center;
+}
+
+#travaillonsEnsembleText h2 {
+    font-size: 3rem;
+}
+
+#travaillonsEnsembleText p {
+    font-size: 1.5rem;
+    width: 35vw;
+    margin-bottom: 2.5rem;
+}
+
+#travaillonsEnsembleText a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    background-color: #b20d0d;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+#travaillonsEnsembleText a:hover {
+    background-color: #7b0606;
+}
+
+#travaillonsEnsembleImage img {
+    width: 25vw;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+
+/*Fin Travaillons ensemble*/
+
+
+/*Début notre projet*/
+
+#containerHistoire {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 8rem;
+}
+
+#histoire {
+    display: flex;
+    padding: 5rem 8rem;
+    justify-content: center;
+    background-color: #dadada;
+    width: 60vw;
+    border-radius: 5rem 5rem 0 0 ;
+}
+
+#histoire-image img {
+    width: 30vw;
+    border-radius: 1rem 10rem;
+}
+
+#histoire-text p {
+    width: 30vw;
+    font-size: 1.5rem;
+}
+
+#histoire-text h2 {
+    font-size: 2.8rem;
+}
+
+#histoire-text span {
+    font-size: 3.5rem;
+    color: #b20d0d;
+}
+/*Fin notre histoire*/
+
+/*Début de la phrase d'accroche*/
+#containerPhrase {
+    display: flex;
+    justify-content: center;
+}
+
+#phrase-accroche {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: #cbad84;
+    padding: 5rem 8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#phrase-accroche h2 {
+    font-size: 4rem;
+}
+
+#phrase-accroche p {
+    font-size: 1.5rem;
+}
+
+#phrase-accroche img {
+    width: 15vw;
+    rotate: -10deg;
+}
+/*Fin de la phrase d'accroche*/
+
+/*Début des 3 cards*/
+#section-container-cards {
+    display: flex;
+    justify-content: center;
+}
+
+#containerCards {
+    display: flex;
+    justify-content: center;
+    border-radius: 4rem 15rem;
+    width: 90vw;
+}
+
+#bio {
+    background-color: #2b643d;
+}
+
+#theme {
+    background-color: #b20d0d;
+}
+
+#devDurable {
+    background-color: #4e1a1a;
+}
+
+.card {
+    height: 50vh;
+    width: 25vw;
+    padding: 2rem;
+    border-radius: 6rem 1rem;
+    margin: 2rem;
+    transition: 0.7s;
+    color: white;
+}
+#bio:hover{
+    background-color: black;
+    color: wheat;
+    
+}
+#theme:hover{
+    background-color: black;
+    color: wheat;
+
+}
+#devDurable:hover{
+    background-color: black;
+    color: wheat;
+}
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-top img {
+    width: auto;
+    height: 6rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.card-top h2 {
+    font-size: 2.5rem;
+}
+
+.card-bot p {
+    font-size: 1.2rem;
+}
+/*Fin des 3 cards*/
+/*Début panier de légume frais */
+#container-bon-burger {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+#containerBonBurger {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 2rem;
+    background-color: #1e6a24;
+    border-radius: 0 0 5rem 5rem;
+}
+
+#containerBonBurger h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#bon-burger {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#bon-burger img {
+    width: auto;
+    height: 40vh;
+    border-radius: 5rem;
+    margin-right: 5rem;
+}
+
+#bon-burger #para p {
+    font-size: 1.3rem;
+    width: 25vw;
+}
+
+/*Fin panier de légume frais */
+/*Fin notre histoire*/
+/*Fin du main*/
+
+
+/*Début footer*/
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+footer {
+    background-color: #363636;
+    padding: 2.5rem;
+}
+
+.content {
+    padding: 1rem 3rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.content a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+#logoReseaux {
+    display: flex;
+    justify-content: center;
+}
+
+#logoReseaux img {
+    width: 1.8rem;
+    padding: 0.6rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    margin: 0.6rem;
+    transition: 0.5s;
+}
+
+#logoReseaux img:hover {
+    background-color: #b1B1B1;
+    rotate: 360deg;
+}
+
+#cp {
+    text-align: center;
+}
+
+
+/*Fin footer*/
+
+@media screen and (max-width:640px) {
+    header {
+        flex-direction: column;
+        position: inherit;
+        margin-bottom: 2rem;
+    }
+    #title {
+        padding: 0;
+        margin: 0;
+    }
+    #logo img {
+        margin-top: 1rem;
+        width: 15rem;
+    }
+    .main-page {
+        display: none;
+        flex-direction: column;
+    }
+    #toggle:checked+.main-page {
+        display: flex;
+    }
+    nav label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+    header nav {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    header #form {
+        padding-bottom: 1rem;
+    }
+    footer {
+        padding: 1rem;
+    }
+    #container {
+        flex-direction: column;
+    }
+    #preHistoire {
+        padding: 0;
+        margin: 0;
+        height: 50vh;
+    }
+    #containerPreHistoire {
+        width: auto;
+    }
+    #preHistoire h2 {
+        font-size: 3rem;
+    }
+    #travaillonsEnsemble {
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+    #travaillonsEnsembleText p {
+        width: auto;
+    }
+    #travaillonsEnsembleImage img {
+        width: 70vw;
+    }
+    .container {
+        flex-direction: column;
+        padding: 0rem 1rem;
+        align-items: center;
+    }
+    .containerText p {
+        font-size: 1.2rem;
+    }
+    .containerImage img {
+        width: 80vw;
+        height: auto;
+    }
+    #containerValeurs,
+    #containerPlanete {
+        flex-direction: column-reverse;
+    }
+    #containerHistoire{
+        margin-top: 0;
+    }
+    #histoire{
+        flex-direction: column;
+        margin: 0;
+        padding: 3rem;
+        text-align: center;
+        border-radius: 0;
+        width: auto;
+    }
+    #histoire img{
+        border-radius: 1rem 3rem;
+        height:25vh;
+        width: auto;
+    }
+    #histoire p{
+        width: auto;
+    }
+
+    #phrase-accroche{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        align-items: center; /*pbmbmmb*/
+    }
+    #phrase-accroche h2{
+        margin: 0;
+        padding:0 ;
+        width: 80vw;
+    }
+    #phrase-accroche-image img{
+        height: 30vh;
+        width: auto;
+    }
+
+    #containerCards{
+        flex-direction: column;
+        width: auto;
+    }
+    .card{
+        height: 60vh;
+        width: 70vw;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    #bon-burger{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #container-bon-burger{
+        padding: 0;
+    }
+    #containerBonBurger{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        width: auto;
+        align-items: center;
+    }
+    #bon-burger img{
+        width: 60vw;
+        height: auto;
+        border-radius: 0;
+        margin:0;
+    }
+    #bon-burger #para p{
+        width: auto;
+        text-align: center;
+        padding: 0rem 2rem;
+    }
+}
