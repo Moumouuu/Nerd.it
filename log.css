@@ -311,6 +311,9 @@ footer {
         display: none;
     }
     #connexionB a {
-        padding: 1rem;
+        padding: 0.5rem 25vw;
+    }
+    #rightSide h2{
+        font-size: 2.5rem;
     }
 }

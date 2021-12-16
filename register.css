@@ -284,10 +284,20 @@ color:#363636;   noir clair
         footer {
             padding: 1rem;
         }
+        #formulaire{
+            height: auto;
+        }
         #container {
             flex-direction: column;
         }
         #formulaire #leftSide {
             display: none;
+        }
+        #righSide h2{
+            font-size: 2.5rem;
+        }
+        #connexionB a{
+            padding: 0.5rem 30vw;
+
         }
     }

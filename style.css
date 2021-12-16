@@ -116,6 +116,7 @@ nav label,
     background-size: cover;
     padding: 8rem;
     animation: fondu 16s ease infinite both;
+    border-bottom: 0.5rem solid #fff;
 }
 
 @keyframes fondu {
@@ -172,8 +173,7 @@ main {
 /*Début de la partie de nos thèmes*/
 
 #nosThemes {
-    margin-top: 6.25rem;
-    height: 130rem;
+    height: 220vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/fondfood.jpg"), url("img/create-food-website.jpg");
     background-repeat: no-repeat no-repeat;
     background-size: contain contain;
@@ -470,15 +470,14 @@ footer {
         flex-direction: column;
     }
     #nosThemes {
-        margin-top: 2rem;
         height: 100rem;
     }
     #nosThemes h2 {
         font-size: 4rem;
     }
     .containerCartes {
-        width: 25rem;
-        height: 20rem;
+        width: 85vw;
+        height: 40vh;
     }
     .containerCartes p {
         font-size: 1rem;
@@ -488,6 +487,7 @@ footer {
         margin: 0;
     }
     #map iframe {
-        width: 25rem;
+        width: auto;
+        height: 50vh;
     }
 }
