@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*
+font-family: 'Bree Serif', serif; font principal du site
+font-family: 'Lato', sans-serif;; font pour les paragraphe
+
+color:#7c0505;  rouge foncé
+color:#9d0808;  rouge foncé clair
+color:#363636;   noir clair
+*/
+
+
+/*Début page*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    background-color: black;
+}
+
+
+/*Début du header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    top: 0;
+    position: sticky;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 999;
+}
+
+#title {
+    margin-right: 6rem;
+}
+
+#title h1 {
+    font-size: 3rem;
+    color: #b20d0d;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-page a {
+    text-decoration: none;
+    color: white;
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.btn::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+nav label,
+#toggle {
+    display: none;
+}
+
+#form a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#form #Inscription {
+    background-color: #b20d0d;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.6rem;
+    transition: 0.35s;
+}
+
+#form #Inscription:hover {
+    background-color: #7b0606;
+}
+
+#form #Identifier {
+    margin-right: 1.8rem;
+}
+
+#form #Identifier:hover {
+    text-decoration: underline;
+}
+
+
+/*Fin du header*/
+
+
+/*Début de l'élément central de l'accueil*/
+
+#mid {
+    background-position: center;
+    background-size: cover;
+    padding: 8rem;
+    animation: fondu 16s ease infinite both;
+}
+
+@keyframes fondu {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img1.jpg");
+    }
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img3.jpg");
+    }
+    70% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img2.jpg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img4.jpg");
+    }
+}
+
+#buttonDown img {
+    width: 2.5rem;
+    padding: 1rem;
+    transition: 0.5s;
+    border-radius: 50vh;
+}
+
+#buttonDown img:hover {
+    background-color: grey;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#logo img {
+    width: 25rem;
+    border-radius: 5rem;
+}
+
+#slogan h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+#slogan span {
+    font-size: 6.25rem;
+    color: #9d0808;
+}
+
+
+/*Fin de la partie centrale*/
+
+
+/*Début de la partie de nos thèmes*/
+
+#nosThemes {
+    margin-top: 6.25rem;
+    height: 130rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/fondfood.jpg"), url("img/create-food-website.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain contain;
+    background-position: top, bottom;
+}
+
+#nosThemes h2 {
+    font-size: 5rem;
+}
+
+#nosThemes span {
+    color: #9d0808;
+}
+
+
+/*Début des cartes de thème*/
+
+.containerCartes {
+    position: absolute;
+    width: 40rem;
+    height: 25rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.containerCartes p {
+    font-size: 1.5rem;
+}
+
+.containerCartes a {
+    padding: 0.6rem 1.25rem;
+    color: #fff;
+    background-color: #9d0808;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.containerCartes a:hover {
+    background-color: #7c0505;
+}
+
+.uneCarteN {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+}
+
+.uneCarteO {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+    top: 110%;
+}
+
+.uneCarteS {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+    top: 220%;
+}
+
+.uneCarteH {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+    top: 330%;
+}
+
+.uneCarteN:hover {
+    transform: rotateY(180deg);
+}
+
+.uneCarteO:hover {
+    transform: rotateY(180deg);
+}
+
+.uneCarteS:hover {
+    transform: rotateY(180deg);
+}
+
+.uneCarteH:hover {
+    transform: rotateY(180deg);
+}
+
+.Naruto {
+    background-image: url("img/narutotheme.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.OnePiece {
+    background-image: url("img/onepiecetheme.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.StarsWars {
+    background-image: url("img/starswarstheme.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.HarryPotter {
+    background-image: url("img/harrypottertheme.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.faceUne {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1.25rem;
+}
+
+.faceUne span {
+    color: #b20d0d;
+    font-size: 3rem;
+}
+
+.faceDeux {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+
+
+/*Fin des cartes de thèmes*/
+
+
+/*Début de la Map*/
+
+#map {
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/monde.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#map h2 {
+    font-size: 3rem;
+}
+
+#map iframe {
+    border-radius: 1rem;
+}
+
+#map span {
+    color: #9d0808;
+    font-size: 4.5rem;
+}
+
+
+/*Fin de la map*/
+
+
+/*Fin du thème*/
+
+
+/*Début footer*/
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+footer {
+    background-color: #363636;
+    padding: 2.5rem;
+}
+
+.content {
+    padding: 1rem 3rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.content a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+#logoReseaux {
+    display: flex;
+    justify-content: center;
+}
+
+#logoReseaux img {
+    width: 1.8rem;
+    padding: 0.6rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    margin: 0.6rem;
+    transition: 0.5s;
+}
+
+#logoReseaux img:hover {
+    background-color: #b1B1B1;
+    rotate: 360deg;
+}
+
+#cp {
+    text-align: center;
+}
+
+
+/*Fin footer*/
+
+
+/*Fin page*/
+
+@media screen and (max-width:640px) {
+    header {
+        flex-direction: column;
+        position: inherit;
+        margin-bottom: 2rem;
+    }
+    #title {
+        padding: 0;
+        margin: 0;
+    }
+    #logo img {
+        margin-top: 1rem;
+        width: 15rem;
+    }
+    .main-page {
+        display: none;
+        flex-direction: column;
+    }
+    #toggle:checked+.main-page {
+        display: flex;
+    }
+    nav label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+    header nav {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    header #form {
+        padding-bottom: 1rem;
+    }
+    #mid {
+        padding: 0;
+        margin: 0;
+    }
+    #mid h2 {
+        font-size: 2rem;
+    }
+    #mid span {
+        font-size: 3rem;
+    }
+    #buttonDown img {
+        display: none;
+    }
+    footer {
+        padding: 1rem;
+    }
+    #container {
+        flex-direction: column;
+    }
+    #nosThemes {
+        margin-top: 2rem;
+        height: 100rem;
+    }
+    #nosThemes h2 {
+        font-size: 4rem;
+    }
+    .containerCartes {
+        width: 25rem;
+        height: 20rem;
+    }
+    .containerCartes p {
+        font-size: 1rem;
+    }
+    #map {
+        padding: 0;
+        margin: 0;
+    }
+    #map iframe {
+        width: 25rem;
+    }
+}
