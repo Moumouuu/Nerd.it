@@ -15,6 +15,7 @@ color:#363636;   noir clair
 
 html {
     scroll-behavior: smooth;
+    cursor: url('img/cursor.png'), auto;
 }
 
 body {
@@ -178,7 +179,6 @@ main {
     background-repeat: no-repeat no-repeat;
     background-size: contain contain;
     background-position: top, bottom;
-    
 }
 
 #nosThemes h2 {
@@ -193,7 +193,7 @@ main {
 /*Début des cartes de thème*/
 
 .containerCartes {
-    position: absolute;
+    position: relative;
     width: 40vw;
     height: 60vh;
     left: 50%;
@@ -213,18 +213,12 @@ main {
     transition: 0.3s;
 }
 
-
 .uneCarteN {
     width: 100%;
     height: 100%;
     transition: all 0.6s ease;
     display: flex;
     margin-bottom: 4rem;
-    filter: opacity(1);
-}
-.uneCarteN:hover .faceTrois 
-a {
-    display: inline-block;
 }
 
 .uneCarteO {
@@ -234,8 +228,8 @@ a {
     display: flex;
     margin-bottom: 4rem;
 }
-.uneCarteO:hover .faceTrois 
-a {
+
+.uneCarteO:hover .faceTrois a {
     display: inline-block;
 }
 
@@ -246,8 +240,8 @@ a {
     display: flex;
     margin-bottom: 4rem;
 }
-.uneCarteS:hover .faceTrois 
-a {
+
+.uneCarteS:hover .faceTrois a {
     display: inline-block;
 }
 
@@ -258,8 +252,8 @@ a {
     display: flex;
     margin-bottom: 4rem;
 }
-.uneCarteH:hover .faceTrois 
-a {
+
+.uneCarteH:hover .faceTrois a {
     display: inline-block;
 }
 
@@ -370,12 +364,9 @@ a {
     color: #f5d8a2;
 }
 
-
-.faceTrois 
-a {
+.faceTrois a {
     display: none;
 }
-
 
 .dessert {
     margin-bottom: 1rem;
@@ -538,7 +529,6 @@ footer {
     }
     #nosThemes {
         height: calc((50vh*5));
-
     }
     #nosThemes h2 {
         font-size: 4rem;
@@ -554,10 +544,10 @@ footer {
         padding: 0;
         margin: 0;
     }
-    #map h2{
+    #map h2 {
         font-size: 2rem;
     }
-    #map span{
+    #map span {
         font-size: 3rem;
     }
     #map iframe {
@@ -567,10 +557,9 @@ footer {
     .uneCarteN:hover {
         margin-bottom: 55vh;
     }
-    .uneCarteN:hover .faceTrois 
-    a {
+    .uneCarteN:hover .faceTrois a .uneCarteN:hover .faceTrois a {
         display: block;
-}
+    }
     .uneCarteN:hover .faceDeux {
         transform: translateY(40vh);
         height: calc(auto);
@@ -582,8 +571,7 @@ footer {
     .uneCarteO:hover {
         margin-bottom: 55vh;
     }
-    .uneCarteO:hover .faceTrois 
-    a {
+    .uneCarteO:hover .faceTrois a {
         display: block;
     }
     .uneCarteO:hover .faceDeux {
@@ -597,8 +585,7 @@ footer {
     .uneCarteS:hover {
         margin-bottom: 55vh;
     }
-    .uneCarteS:hover .faceTrois 
-    a {
+    .uneCarteS:hover .faceTrois a {
         display: block;
     }
     .uneCarteS:hover .faceDeux {
@@ -609,21 +596,17 @@ footer {
         transform: translateY(40vh);
         height: calc(auto);
     }
-
     .uneCarteH:hover .faceDeux {
         transform: translateY(40vh);
         height: calc(auto);
     }
-
     .uneCarteH:hover .faceTrois {
         transform: translateY(40vh);
         height: calc(auto);
     }
-    .uneCarteH:hover .faceTrois 
-    a {
+    .uneCarteH:hover .faceTrois a {
         display: block;
     }
-
     .faceDeux span {
         font-size: 7vw;
     }

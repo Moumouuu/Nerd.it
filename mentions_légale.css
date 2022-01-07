@@ -1,55 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-/*
-font-family: 'Bree Serif', serif; font principal du site
-font-family: 'Lato', sans-serif; font pour les paragraphe
-
-color:#7c0505;  rouge foncé
-color:#9d0808;  rouge foncé clair
-color:#363636;   noir clair
-*/
-
-body {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+html{
     font-family: 'Bree Serif', serif;
 }
-
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
     top: 0;
     position: sticky;
-    justify-content: space-between;
-    padding: 0rem 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    z-index: 999;
 }
-
 #title {
-    margin-right: 6rem;
+    margin-right: 100px;
 }
 
 #title h1 {
-    font-size: 3rem;
+    font-size: 50px;
     color: #b20d0d;
 }
-
-.main-page {
+nav {
+    font-family: 'Bree Serif', serif;
     display: flex;
     flex-direction: row;
 }
 
-.main-page a {
+nav a {
     text-decoration: none;
     color: white;
-    padding: 0rem 1.5rem;
-    font-size: 1.5rem;
+    padding: 0px 25px;
+    font-size: 25px;
 }
-
 .btn::after {
     content: '';
     width: 0;
@@ -64,21 +53,16 @@ nav a:hover::after {
     transition: width .3s;
 }
 
-label,
-#toggle {
-    display: none;
-}
-
 #form a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 18px;
 }
 
 #form #Inscription {
     background-color: #b20d0d;
-    padding: 0.6rem 1.25rem;
-    border-radius: 0.6rem;
+    padding: 10px 20px;
+    border-radius: 10px;
     transition: 0.35s;
 }
 
@@ -87,67 +71,45 @@ label,
 }
 
 #form #Identifier {
-    margin-right: 1.8rem;
+    margin-right: 30px;
 }
 
 #form #Identifier:hover {
     text-decoration: underline;
 }
 
-#principal {
-    background-image: url(img/fond_pestel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0.375rem;
+#centre{
+    background-image: url(img/fond_ment_legale.jpg);
+    height: 100vh;
+    padding-top: 2rem;
 }
-
-h2 {
-    margin-top: 3rem;
-    color: #ededed;
-    font-size: 2rem;
+#titre{
+    padding-right: 10rem;
+    padding-left: 15rem;
+    font-size: 1.563rem;
+    text-align: center;
 }
-
-#titre h2 {
-    font-size: 3rem;
-}
-
-table {
-    margin-top: 3rem;
-    border-collapse: collapse;
-    margin-bottom: 5rem;
-    table-layout: auto;
-    width: 85rem;
-    height: 35rem;
-}
-
-td {
-    width: 55rem;
-    color: #d3d3d3;
+.sous_titre{
+    padding-left: 40px;
+    color: #D70A0A;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
-    padding-right: 2rem;
-    font-size: 1rem;
 }
-
-th {
-    color: #fff;
-    font-size: 2rem;
+.sous_titre h2{
+    margin-bottom: 0.938rem;
+    margin-top: 0;
 }
-
-.line_type1 {
-    background-color: #781313;
+.texte{
+    margin-right: 1.875rem;
+    padding-left: 6.25rem;
+    font-size: 1.063rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
-.line_type1 td{
-    color: white;
-}
-.line_type2 {
-    background-color: #c3bfbf;
-}
-.line_type2 td{
-    color: white;
+.texte p{
+    margin-top: 0.313rem;
+    margin-bottom: 0;
+    padding-bottom: 0.938rem;
 }
 
 #container {

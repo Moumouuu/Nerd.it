@@ -110,11 +110,13 @@ nav label,
 
 
 /*Début de la section principale*/
-main{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("img/wall.jpg");
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/wall.jpg");
     background-size: contain;
     background-position: center;
-    }
+}
+
 
 /*Début pré histoire*/
 
@@ -212,7 +214,7 @@ main{
     display: flex;
     padding: 5rem 8rem;
     justify-content: center;
-    background-color: #F2F2F2;
+    background-color: #dadada;
     width: 60vw;
 }
 
@@ -234,9 +236,13 @@ main{
     font-size: 3.5rem;
     color: #b20d0d;
 }
+
+
 /*Fin notre histoire*/
 
+
 /*Début de la phrase d'accroche*/
+
 #containerPhrase {
     display: flex;
     justify-content: center;
@@ -246,7 +252,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 60vw;
-    background-color: #cbad84;
+    background-color: #ac8958;
     padding: 5rem 8rem;
     text-align: center;
     justify-content: center;
@@ -264,9 +270,13 @@ main{
     width: 15vw;
     rotate: -10deg;
 }
+
+
 /*Fin de la phrase d'accroche*/
 
+
 /*Début des 3 cards*/
+
 #section-container-cards {
     display: flex;
     justify-content: center;
@@ -294,27 +304,29 @@ main{
 
 .card {
     height: auto;
-    width: auto;
+    width: 33%;
     padding: 2rem;
-    border-radius: 5rem 1rem;
+    border-radius: 2rem 2rem;
     transition: 0.7s;
     color: white;
     margin: 0rem 1rem;
 }
-#bio:hover{
-    background-color: black;
-    color: wheat;
-    
-}
-#theme:hover{
-    background-color: black;
-    color: wheat;
 
-}
-#devDurable:hover{
+#bio:hover {
     background-color: black;
     color: wheat;
 }
+
+#theme:hover {
+    background-color: black;
+    color: wheat;
+}
+
+#devDurable:hover {
+    background-color: black;
+    color: wheat;
+}
+
 .card-top {
     display: flex;
     align-items: center;
@@ -334,10 +346,15 @@ main{
 }
 
 .card-bot p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
+
+
 /*Fin des 3 cards*/
+
+
 /*Début panier de légume frais */
+
 #container-bon-burger {
     display: flex;
     justify-content: center;
@@ -370,12 +387,17 @@ main{
 }
 
 #bon-burger #para p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 25vw;
 }
 
+
 /*Fin panier de légume frais */
+
+
 /*Fin notre histoire*/
+
+
 /*Fin du main*/
 
 
@@ -438,7 +460,6 @@ footer {
 /*Fin footer*/
 
 @media screen and (max-width:640px) {
-
     header {
         flex-direction: column;
         position: inherit;
@@ -497,7 +518,7 @@ footer {
     #preHistoire h2 {
         font-size: 2.5rem;
     }
-    #preHistoire p{
+    #preHistoire p {
         font-size: 1.5rem;
     }
     #travaillonsEnsemble {
@@ -526,10 +547,10 @@ footer {
     #containerPlanete {
         flex-direction: column-reverse;
     }
-    #containerHistoire{
+    #containerHistoire {
         margin-top: 0;
     }
-    #histoire{
+    #histoire {
         flex-direction: column;
         margin: 0;
         padding: 3rem;
@@ -537,74 +558,72 @@ footer {
         border-radius: 0;
         width: auto;
     }
-    #histoire img{
+    #histoire img {
         border-radius: 1rem 3rem;
-        height:25vh;
+        height: 25vh;
         width: auto;
     }
-    #histoire p{
+    #histoire p {
         width: auto;
     }
-
-    #phrase-accroche{
+    #phrase-accroche {
         margin: 0;
         padding: 1rem;
         width: auto;
         align-items: center;
     }
-    #phrase-accroche h2{
+    #phrase-accroche h2 {
         margin: 0;
-        padding:0 ;
+        padding: 0;
         width: 80vw;
         font-size: 3.5rem;
     }
-    #phrase-accroche-image img{
+    #phrase-accroche-image img {
         height: 30vh;
         width: auto;
     }
-
-    #containerCards{
+    #containerCards {
         flex-direction: column;
         width: auto;
     }
-    .card{
+    .card {
         height: auto;
         width: 70vw;
         padding: 2rem;
         margin-bottom: 1rem;
     }
-    .card h2{
+    .card h2 {
         font-size: 1.8rem;
     }
-    .card img{
+    .card img {
         width: 4rem;
         height: auto;
     }
-    #bon-burger{
+    #bon-burger {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    #container-bon-burger{
+    #container-bon-burger {
         padding: 0;
     }
-    #containerBonBurger{
+    #containerBonBurger {
         margin: 0rem;
         padding: 1rem;
         border-radius: 0;
         width: auto;
         align-items: center;
     }
-    #containerBonBurger h2{
+    #containerBonBurger h2 {
         font-size: 2rem;
     }
-    #bon-burger img{
+    #bon-burger img {
         width: 70vw;
         height: auto;
         border-radius: 0;
-        margin:0;
+        margin: 0;
     }
-    #bon-burger #para p{
+    #bon-burger #para p {
         width: auto;
         text-align: center;
         padding: 0rem 2rem;
