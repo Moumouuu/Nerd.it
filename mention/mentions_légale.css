@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+html {
+    font-family: 'Bree Serif', serif;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 999;
+}
+
+#title {
+    margin-right: 6rem;
+}
+
+#title h1 {
+    font-size: 3rem;
+    color: #b20d0d;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-page a {
+    text-decoration: none;
+    color: white;
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+.btn::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+label,
+#toggle {
+    display: none;
+}
+
+#form a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#form #Inscription {
+    background-color: #b20d0d;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.6rem;
+    transition: 0.35s;
+}
+
+#form #Inscription:hover {
+    background-color: #7b0606;
+}
+
+#form #Identifier {
+    margin-right: 1.8rem;
+}
+
+#form #Identifier:hover {
+    text-decoration: underline;
+}
+
+#centre {
+    background-image: url("../img/fond_ment_legale.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+#titre {
+    padding-right: 10rem;
+    padding-left: 15rem;
+    font-size: 1.563rem;
+    text-align: center;
+}
+
+.sous_titre {
+    padding-left: 40px;
+    color: #D70A0A;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.sous_titre h2 {
+    margin-bottom: 0.938rem;
+    margin-top: 0;
+}
+
+.texte {
+    margin-right: 1.875rem;
+    padding-left: 6.25rem;
+    font-size: 1.063rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.texte p {
+    margin-top: 0.313rem;
+    margin-bottom: 0;
+    padding-bottom: 0.625rem;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+footer {
+    background-color: #363636;
+    padding: 2.5rem;
+}
+
+.content {
+    padding: 1rem 3rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.content a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+#logoReseaux {
+    display: flex;
+    justify-content: center;
+}
+
+#logoReseaux img {
+    width: 1.8rem;
+    padding: 0.6rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    margin: 0.6rem;
+    transition: 0.5s;
+}
+
+#logoReseaux img:hover {
+    background-color: #b1B1B1;
+    transform: rotate(360deg);
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:640px) {
+    header {
+        flex-direction: column;
+        position: inherit;
+        margin-bottom: 2rem;
+    }
+    #title {
+        padding: 0;
+        margin: 0;
+    }
+    #logo img {
+        margin-top: 1rem;
+        width: 15rem;
+    }
+    .main-page {
+        display: none;
+        flex-direction: column;
+    }
+    #toggle:checked+.main-page {
+        display: flex;
+    }
+    nav label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+    header nav {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    header #form {
+        padding-bottom: 1rem;
+    }
+    #titre {
+        padding: 0;
+        margin: 0;
+    }
+    #toggle {
+        display: none;
+    }
+    #centre {
+        padding-bottom: 31.25rem;
+        background-repeat: repeat;
+    }
+    .sous_titre {
+        text-align: center;
+    }
+    .texte {
+        padding-left: 4rem;
+        text-align: center;
+    }
+    footer {
+        padding: 1rem;
+    }
+    #container {
+        flex-direction: column;
+    }
+}

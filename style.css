@@ -15,7 +15,7 @@ color:#363636;   noir clair
 
 html {
     scroll-behavior: smooth;
-    cursor: url('img/cursor.png'), auto;
+    cursor: url('../img/cursor.png'), auto;
 }
 
 body {
@@ -113,8 +113,6 @@ nav label,
 /*Début de l'élément central de l'accueil*/
 
 #mid {
-    background-position: center;
-    background-size: cover;
     padding: 8rem;
     animation: fondu 16s ease infinite both;
     border-bottom: 0.5rem solid #fff;
@@ -122,16 +120,28 @@ nav label,
 
 @keyframes fondu {
     0% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img1.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?cs=srgb&dl=pexels-lisa-fotios-1279330.jpg&fm=jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     50% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img3.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     70% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img2.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?cs=srgb&dl=pexels-dapurmelodi-1109197.jpg&fm=jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     100% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/img4.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -175,7 +185,7 @@ main {
 
 #nosThemes {
     height: calc((60vh*5));
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/fondfood.jpg"), url("img/create-food-website.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"), url("https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-repeat: no-repeat no-repeat;
     background-size: contain contain;
     background-position: top, bottom;
@@ -219,6 +229,11 @@ main {
     transition: all 0.6s ease;
     display: flex;
     margin-bottom: 4rem;
+    filter: opacity(1);
+}
+
+.uneCarteN:hover .faceTrois a {
+    display: inline-block;
 }
 
 .uneCarteO {
@@ -298,25 +313,25 @@ main {
 }
 
 .Naruto {
-    background-image: url("img/narutotheme.jpg");
+    background-image: url("https://images.pexels.com/photos/4224212/pexels-photo-4224212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-size: cover;
 }
 
 .OnePiece {
-    background-image: url("img/onepiecetheme.jpg");
+    background-image: url("https://images.pexels.com/photos/6074859/pexels-photo-6074859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-size: cover;
 }
 
 .StarsWars {
-    background-image: url("img/starswarstheme.jpg");
+    background-image: url("https://images.pexels.com/photos/3019977/pexels-photo-3019977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-size: cover;
 }
 
 .HarryPotter {
-    background-image: url("img/harrypottertheme.jpg");
+    background-image: url("https://images.pexels.com/photos/10111638/pexels-photo-10111638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-size: cover;
 }
@@ -380,9 +395,9 @@ main {
 
 #map {
     padding: 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/monde.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1078850/pexels-photo-1078850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 #map h2 {
@@ -453,7 +468,7 @@ footer {
 
 #logoReseaux img:hover {
     background-color: #b1B1B1;
-    rotate: 360deg;
+    transform: rotate(360deg);
 }
 
 #cp {
@@ -543,6 +558,7 @@ footer {
     #map {
         padding: 0;
         margin: 0;
+        background-image: none;
     }
     #map h2 {
         font-size: 2rem;
@@ -554,19 +570,29 @@ footer {
         width: auto;
         height: 50vh;
     }
+    .uneCarteN .faceDeux p,
+    .uneCarteO .faceDeux p,
+    .uneCarteS .faceDeux p,
+    .uneCarteH .faceDeux p {
+        font-size: 3.5vw;
+    }
+    .uneCarteN .faceTrois *,
+    .uneCarteO .faceTrois *,
+    .uneCarteS .faceTrois *,
+    .uneCarteH .faceTrois * {
+        font-size: 4vw;
+    }
     .uneCarteN:hover {
         margin-bottom: 55vh;
     }
-    .uneCarteN:hover .faceTrois a .uneCarteN:hover .faceTrois a {
+    .uneCarteN:hover .faceTrois a {
         display: block;
     }
     .uneCarteN:hover .faceDeux {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteN:hover .faceTrois {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteO:hover {
         margin-bottom: 55vh;
@@ -576,11 +602,9 @@ footer {
     }
     .uneCarteO:hover .faceDeux {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteO:hover .faceTrois {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteS:hover {
         margin-bottom: 55vh;
@@ -590,19 +614,15 @@ footer {
     }
     .uneCarteS:hover .faceDeux {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteS:hover .faceTrois {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteH:hover .faceDeux {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteH:hover .faceTrois {
         transform: translateY(40vh);
-        height: calc(auto);
     }
     .uneCarteH:hover .faceTrois a {
         display: block;
