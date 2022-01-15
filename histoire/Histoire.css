@@ -141,6 +141,7 @@ main {
 
 #containerPreHistoire h2 {
     font-size: 3.5rem;
+    color: #fff;
 }
 
 #containerPreHistoire p {
@@ -149,7 +150,7 @@ main {
 }
 
 #containerPreHistoire span {
-    color: #b20d0d;
+    color: #d81919;
 }
 
 
@@ -224,7 +225,7 @@ main {
 
 #histoire-image img {
     width: 30vw;
-    border-radius: 1rem 10rem;
+    border-radius: 1rem 1rem;
 }
 
 #histoire-text p {
@@ -464,6 +465,7 @@ footer {
 /*Fin footer*/
 
 @media screen and (max-width:640px) {
+
     header {
         flex-direction: column;
         position: inherit;
@@ -552,6 +554,7 @@ footer {
         flex-direction: column-reverse;
     }
     #containerHistoire {
+        display: inline;
         margin-top: 0;
     }
     #histoire {
@@ -563,9 +566,8 @@ footer {
         width: auto;
     }
     #histoire img {
-        border-radius: 1rem 3rem;
-        height: 25vh;
-        width: auto;
+        border-radius: 0rem ;
+        width: 80vw;
     }
     #histoire p {
         width: auto;

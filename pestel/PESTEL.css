@@ -132,8 +132,8 @@ td {
     width: 55rem;
     color: #d3d3d3;
     font-family: 'Lato', sans-serif;
-    padding-right: 2rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 th {
@@ -278,11 +278,11 @@ h4 {
         margin-bottom: 1.25rem;
     }
     td {
-        padding-right: 0;
-        font-size: 0.625rem;
+        padding: 1rem 1rem 1rem 0rem;
+        font-size: 1rem;        
     }
     th {
-        font-size: 1.875rem;
+        font-size: 1.25rem;
     }
     footer {
         padding: 1rem;

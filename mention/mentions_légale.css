@@ -49,7 +49,7 @@ header {
     content: '';
     width: 0;
     display: block;
-    height: 2px;
+    height: 0.125rem;
     background: #fff;
     transition: width 0.3s;
 }
@@ -104,9 +104,9 @@ label,
 }
 
 .sous_titre {
-    padding-left: 40px;
+    padding-left: 2.5rem;
     color: #D70A0A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -132,7 +132,7 @@ label,
 #container {
     display: flex;
     justify-content: space-around;
-    border: solid black 2px;
+    border: solid black 0.125rem;
 }
 
 footer {
@@ -205,12 +205,12 @@ h4 {
         display: flex;
     }
     nav label {
-        width: 30px;
+        width: 1.875rem;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        font-size: 40px;
+        font-size: 2.5rem;
         color: white;
         cursor: pointer;
         user-select: none;
@@ -238,9 +238,10 @@ h4 {
     }
     .sous_titre {
         text-align: center;
+        padding-left: 0;
     }
     .texte {
-        padding-left: 4rem;
+        padding-left: 3rem;
         text-align: center;
     }
     footer {
